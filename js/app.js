@@ -16,6 +16,7 @@ var showReference = function(reference){
 	result.find('.reference-image a').attr('href', reference.url);
 	var referenceImage = result.find('.reference-image img');
 	referenceImage.attr('src', reference.covers[202]);
+	referenceImage.attr('alt', reference.name);
 
 	// set reference name
 	var referenceName = result.find('.reference-name a');
